@@ -4,12 +4,6 @@
 --
 -- Creates the project database, 3 lookup tables (with their data)
 -- and the main table that will hold the 101,766 hospital visits.
---
--- How to run:
---   Option 1: open this file in MySQL Workbench and click the
---             lightning bolt (Execute).
---   Option 2: just run  python load_data.py  (it runs this file
---             automatically before loading the CSV).
 -- =============================================================
 
 -- 1. Create a fresh database for the project

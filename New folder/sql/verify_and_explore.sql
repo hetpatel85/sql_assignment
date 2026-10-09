@@ -1,17 +1,5 @@
--- =============================================================
--- verify_and_explore.sql
--- Run in MySQL Workbench AFTER load_data.py has finished.
--- Part A checks the load worked (Workflow Step 3).
--- Part B shows a few analysis questions answered with SQL alone.
--- =============================================================
-
 USE hospital_readmission;
 
--- -------------------------------------------------------------
--- PART A: Verify the load
--- -------------------------------------------------------------
-
--- A1. Row count (expected: 101766)
 SELECT COUNT(*) AS total_rows FROM patient_encounters;
 
 -- A2. Sample rows

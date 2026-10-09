@@ -1,22 +1,11 @@
-"""
-config.py
----------
-One place for the MySQL connection settings.
-The loader script, the notebook and the Streamlit app all import from here,
-so you only need to change your password in ONE place.
-"""
 
 from sqlalchemy import create_engine
 from sqlalchemy.engine import URL
-
-# ------------------------------------------------------------------
-# CHANGE THESE to match your own MySQL installation
-# ------------------------------------------------------------------
 DB_CONFIG = {
     "host": "localhost",
     "port": 3306,
     "user": "root",
-    "password": "password",   # <-- put your MySQL root password here
+    "password": "password",  
     "database": "hospital_readmission",
 }
 # ------------------------------------------------------------------
