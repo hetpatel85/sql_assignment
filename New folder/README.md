@@ -57,37 +57,6 @@ readmission-project/
 └── notebooks/
     └── analysis.ipynb         Cleaning, analysis, visuals and observations
 ```
-
-## How to run
-
-**Requirements:** Python 3.10 or newer, and MySQL Server 8 running on your computer.
-
-1. **Install the libraries** (run in the project folder):
-   ```
-   python -m pip install -r requirements.txt
-   ```
-
-2. **Set your MySQL password** in `config.py`:
-   ```python
-   "password": "YOUR_MYSQL_PASSWORD",
-   ```
-
-3. **Create the database and load the data:**
-   ```
-   python load_data.py
-   ```
-   This runs `sql/create_database.sql`, loads all 101,766 rows into MySQL, and prints verification checks. (You can also run the SQL file in MySQL Workbench first.)
-
-4. **Run the analysis notebook:** open `notebooks/analysis.ipynb` in VS Code or Jupyter, select your Python kernel, and click **Run All**. The last section saves the cleaned data to a new MySQL table, `encounters_clean`.
-
-5. **Start the dashboard:**
-   ```
-   streamlit run app.py
-   ```
-   It opens in your browser at `http://localhost:8501`.
-
-Optional: open `sql/verify_and_explore.sql` in MySQL Workbench to see verification checks and SQL-only analysis.
-
 ## Database design
 
 | Table | Rows | Purpose |
