@@ -12,15 +12,6 @@ DB_CONFIG = {
 
 
 def get_engine(with_database: bool = True):
-    """
-    Returns a SQLAlchemy engine connected to MySQL.
-
-    with_database=False connects to the MySQL *server* only
-    (needed before the database itself has been created).
-
-    URL.create() is used instead of a plain string so passwords
-    containing special characters like @ or # still work.
-    """
     url = URL.create(
         drivername="mysql+pymysql",
         username=DB_CONFIG["user"],

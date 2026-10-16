@@ -20,3 +20,5 @@ streamlit>=1.50
 # Running the notebook inside VS Code
 ipykernel>=6.0
 nbformat>=5.0
+
+scikit-learn>=1.5
