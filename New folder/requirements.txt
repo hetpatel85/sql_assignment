@@ -22,3 +22,10 @@ ipykernel>=6.0
 nbformat>=5.0
 
 scikit-learn>=1.5
+xgboost>=2.0                  # model used by the dashboard's Risk predictor
+
+# Generative AI (AI summary in the Risk predictor tab)
+google-genai>=1.0
+
+# Optional, only for notebooks/model_comparison.ipynb (that notebook installs them itself
+# and skips any that won't install):  lightgbm, catboost

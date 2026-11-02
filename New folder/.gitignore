@@ -1,0 +1,16 @@
+# Private keys and passwords - never upload these
+.streamlit/secrets.toml
+
+# Python environment and cache
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Trained model files (the dashboard retrains the model if the file is missing)
+models/
+
+# Created automatically by CatBoost
+catboost_info/
+
+# Scratch file created by VS Code's Code Runner
+tempCodeRunnerFile.py
